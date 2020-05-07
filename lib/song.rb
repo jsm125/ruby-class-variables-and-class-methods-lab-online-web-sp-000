@@ -28,7 +28,9 @@ attr_accessor :name, :artist, :genre
   end
 
   def self.genre_count #Return hash of genres and # of songs
+    @@genres_count = @@genres
     if @@genres.uniq
+      puts "#{@genres} and #{
       @@genres.uniq
     @@genres.map do ()
   end
