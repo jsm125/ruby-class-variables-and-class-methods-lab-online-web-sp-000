@@ -23,7 +23,7 @@ attr_accessor :name, :artist, :genre
   end
   
   def self.artists(artist) #Shows all of the artists of the existing songs - unique only
-    if @@artists.include?("artist") == true 
+    if @@artists.include?(artist) == true 
   end
     @@artists << artist   
     @@artists
