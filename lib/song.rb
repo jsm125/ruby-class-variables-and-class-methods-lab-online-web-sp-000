@@ -23,6 +23,9 @@ attr_accessor :name, :artist, :genre
   end
   
   def self.artists #Shows us all of the artists of the existing songs - unique only
+    if @@artists.include?(artist) == true 
+    else 
+      @@artists << artist   
   end
   
   def self.genre_count #Show us the number of songs for each genre / Add to genre_count
