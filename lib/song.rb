@@ -32,7 +32,7 @@ attr_accessor :name, :artist, :genre
     @@genres.map do |genre|
       if genre_count[genre]
         genre_count+=1
-      else genre_count[1] = 1
+      else genre_count[genre] = 1
     end
   end
   genre_count
