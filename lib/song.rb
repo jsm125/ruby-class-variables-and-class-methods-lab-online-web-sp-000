@@ -29,9 +29,9 @@ attr_accessor :name, :artist, :genre
 
   def self.genre_count #Return hash of genres and # of songs
     genre_count = {}
-    @@genres.each |genre|
+    @@genres.each do |genre|
       if genre_count[genre]
-        genre_count+=1
+        genre_count[genre_count]+=1
       else genre_count[genre] = 1
       end
     end
