@@ -28,11 +28,14 @@ attr_accessor :name, :artist, :genre
   end
 
   def self.genre_count #Return hash of genres and # of songs
-    @@genres_count = @@genres
-    if @@genres.uniq
-      puts "#{@genres} and #{
-      @@genres.uniq
-    @@genres.map do ()
+    genre_count = {}
+    @@genres.map do |genre|
+      if genre_count[genre]
+        genre_count+=1
+      else genre_count[1] = 1
+    end
+  end
+  genre_count
   end
   
   def self.artist_count #Show us the number of artists for each song/Add to artist_count
