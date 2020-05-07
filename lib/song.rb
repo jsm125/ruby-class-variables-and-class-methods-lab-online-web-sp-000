@@ -9,9 +9,9 @@ attr_accessor :name, :artist, :genre
   def initialize(song_name, artist, genre)
     @@count+=1 #Show us all of the artists of existing songs 
     @@genres << self.genre #Need to add genre of all new songs
-    @@name = song_name
-    @@artist = artist
-    @@genre = genre
+    @name = song_name
+    @artist = artist
+    @genre = genre
     @@genres << genre
     @@artists << artist
   end
