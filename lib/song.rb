@@ -26,6 +26,7 @@ attr_accessor :name, :artist, :genre
     if @@artists.include?(artist) == true 
       end
     @@artists << artist   
+    self.artist 
   end
   
   def self.genre_count #Show us the number of songs for each genre / Add to genre_count
