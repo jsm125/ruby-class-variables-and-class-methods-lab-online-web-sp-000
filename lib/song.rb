@@ -28,7 +28,7 @@ attr_accessor :name, :artist, :genre
   end
 
   def self.genre_count #Show us the number of songs for each genre / Add to genre_count
-
+    @@genres.uniq.each
   end
   
   def self.artist_count #Show us the number of artists for each song/Add to artist_count
