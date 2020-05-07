@@ -33,9 +33,9 @@ attr_accessor :name, :artist, :genre
       if genre_count[genre]
         genre_count+=1
       else genre_count[genre] = 1
+      end
     end
-  end
-  genre_count
+    genre_count
   end
   
   def self.artist_count #Show us the number of artists for each song/Add to artist_count
