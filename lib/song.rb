@@ -19,17 +19,16 @@ attr_accessor :name, :artist, :genre
     @@count 
   end
   
-  def self.genres #Show us artists of all of the genres of existing songs 
-    @@genres #Change to unique only here
-  end
-  
   def self.artists
     @@artists.uniq 
   end
   
+  def self.genres #Show us artists of all of the genres of existing songs 
+    @@genres.uniq #Change to unique only here
+  end
+  
   def self.genres 
     @@genres.uniq
-  end
   
   def self.genre_count #Show us the number of songs for each genre / Add to genre_count
     @@genres.each do (genre, count)
