@@ -6,12 +6,14 @@ class Song
 
 attr_accessor :name, :artist, :genre
 
-  def initialize(name, artist,genre)
+  def initialize(song_name, artist, genre)
     @@count+=1 #Show us all of the artists of existing songs 
     @@genres << self.genre #Need to add genre of all new songs
-    self.name = name
-    self.artist = artist
-    self.genre = genre
+    @@name = song_name
+    @@artist = artist
+    @@genre = genre
+    @@genres << genre
+    @@artists << artist
   end
   
   def self.count #Show us artists of all existing songs 
